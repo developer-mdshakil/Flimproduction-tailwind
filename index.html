@@ -13,6 +13,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                yellow: '#FECC02',
               }
             }
           }
@@ -23,13 +24,177 @@
     <!-- header-area start  -->
     <header>
         <!-- start-navbar  -->
-        <nav class="bg-blue-400 text-white">
-            <div class="container px-24">
-                <a href="#" class="">Flim Production</a>
+        <nav class="bg-slate-500 text-white py-4 sticky">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-3xl font-sans font-bold">Flim Production</a>
+                <ul class="flex items-center">
+                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Home</a></li>
+                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Our Movies</a></li>
+                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">About US</a></li>
+                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Services</a></li>
+                </ul>
             </div>
         </nav>
         <!-- end-navbar  -->
+        <!-- banner-section start  -->
+        <section class="banner-section text-white uppercase bg-cover bg-no-repeat px-20" style="background-image: url(/images/banner.jpg);">
+            <div class="container mx-auto pr-20 pt-48 pb-52">
+                <h4 class="text-base font-serif font-normal">Movie production studio</h4>
+                <h1 class="text-5xl font-sans font-bold">Films MAde to</h1>
+                <h1 class="text-5xl font-sans font-bold text-yellow">Perfection</h1>
+                <p class="text-xs font-normal py-5">Filmmaking is the process by which a motion picture is produced. Filmmaking involves a number of <br> complex and discrete stages, starting with an initial story, idea, or commission.</p>
+                <button class="border text-base font-medium px-4 py-3 hover:text-blue-500 duration-75">Discover More</button>
+            </div>
+        </section>
+        <!-- banner-section end  -->
     </header>
+    <main>
+        <!-- flimExperience-section start  -->
+        <section class="flimExperience-section my-16 px-20">
+            <div class="container mx-auto">
+                <div class="flim-maker grid grid-cols-2 gap-x-9">
+                    <div class="relative">
+                        <img class="rounded-lg" src="images/camera-man.jpg" alt="">
+                        <h2 class="absolute text-3xl font-semibold bg-white -bottom-10 right-36 px-8 py-4 rounded-md shadow-lg">23 YEARS of EXPERIENCE</h2>
+                    </div>
+                    <div class="filmaker-info">
+                        <h4 class="text-base font-semibold text-black pb-4">ABOUT US</h4>
+                        <h1 class="text-5xl font-bold font-sans text-black mb-9">FIlming Experience <br> Just Got better</h1>
+                        <p class="mb-9 pr-9">A film director controls a film's artistic and dramatic aspects and visualizes the screenplay while guiding the film crew and actors in the fulfilment of that vision. The director has a key role in choosing the cast members, production design and all the creative aspects of filmmaking</p>
+                        <button class="border border-slate-700 text-base font-medium px-4 py-3 hover:text-blue-500 duration-75">Discover More</button>
+                    </div>
+                </div>
+                <!-- .flimmaking-mission start -->
+                <div class="flimmaking-missions grid grid-cols-3 gap-x-14 mt-24">
+                    <div class="our-vission border-t-4 border-black">
+                        <h1 class="text-5xl font-sans font-bold text-black mb-2">OUR VISIOn</h1>
+                        <p class="text-base font-normal text-slate-400">Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision, the challenge is to explain it to your crew.</p>
+                    </div>
+                    <div class="our-vission border-t-4 border-black">
+                        <h1 class="text-5xl font-sans font-bold text-black mb-2">OUR VISIOn</h1>
+                        <p class="text-base font-normal text-slate-400">Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision, the challenge is to explain it to your crew.</p>
+                    </div>
+                    <div class="our-vission border-t-4 border-black">
+                        <h1 class="text-5xl font-sans font-bold text-black mb-2">OUR VISIOn</h1>
+                        <p class="text-base font-normal text-slate-400">Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision, the challenge is to explain it to your crew.</p>
+                    </div>
+                </div>
+                <!-- .flimmaking-mission end  -->
+            </div>
+        </section>
+        <!-- flimExperience-section end  -->
+        <!-- movieCollection-section start  -->
+        <section class="movieCollection-section bg-slate-700 text-white py-12 my-16 px-20">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center mb-9">
+                    <div class="movieCollection-title">
+                    <h4 class="text-base font-serif font-normal">OUR MOVIES</h4>
+                   <h1 class="text-5xl font-sans font-bold">Movie collection</h1>
+                    </div>
+                   <div class="see-more-button">
+                    <button class="border text-base font-medium px-3 py-2 hover:text-blue-500 duration-75">See More Movies</button>
+                   </div>
+                </div>
+                <!-- movie-items start  -->
+                <div class="movie-items grid grid-cols-4 gap-x-14">
+                    <!-- movie-1  -->
+                    <div class="border border-white p-7">
+                        <img src="images/tenet.jpg" alt="">
+                    </div>
+                    <!-- movie-1  -->
+                    <div class="border border-white p-7">
+                        <img src="images/inception.jpg" alt="">
+                    </div>
+                    <!-- movie-1  -->
+                    <div class="border border-white p-7">
+                        <img src="images/interstellar.jpg" alt="">
+                    </div>
+                    <!-- movie-1  -->
+                    <div class="border border-white p-7">
+                        <img src="images/fractured.jpg" alt="">
+                    </div>
+                </div>
+                <!-- movie-items end  -->
+            </div>
+        </section>
+        <!-- movieCollection-section end  -->
+        <!-- offer-section start  -->
+        <section class="offer-section py-16 px-20">
+            <div class="container mx-auto">
+                <div class="offer-title text-center">
+                    <h5 class="text-base font-bold uppercase">services</h5>
+                    <h1 class="text-5xl font-sans font-bold uppercase mb-9">what we offer</h1>
+                </div>
+                <div class="offer-items grid grid-rows-2 grid-cols-4 text-center gap-11">
+                    <!-- offer-1  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/camera.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">movies director</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-1  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/3d-glasss.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">3D MOVIES</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-3  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/director-chair.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">Film maker</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-4  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/film.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">Studio Production</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-5  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/theater.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">Drama Movies</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-6  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/rim.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">Rolling Production</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-7  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/cut-board.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">Movie Production</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                    <!-- offer-8  -->
+                    <article class="border-4 border-slate-400 p-6">
+                        <div class="flex justify-center mb-4">
+                            <img class="w-16 h-16" src="images/icons/count-down.png" alt="">
+                        </div>
+                        <h4 class="text-base font-bold font-sans uppercase mb-4">actor action</h4>
+                        <p>Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision,</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- offer-section end  -->
+    </main>
     <!-- header-area end  -->
 </body>
 </html>
