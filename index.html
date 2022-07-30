@@ -25,13 +25,13 @@
     <header>
         <!-- start-navbar  -->
         <nav class="bg-slate-500 text-white py-4 fixed top-0 left-0 right-0 z-10">
-            <div class="container mx-auto flex justify-between items-center">
+            <div class="container mx-auto text-center md:flex lg:flex  md:justify-between lg:justify-between items-center">
                 <a href="#" class="text-3xl font-sans font-bold">Flim Production</a>
-                <ul class="flex items-center">
+                <ul class="invisible md:visible lg:visible flex items-center">
                     <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Home</a></li>
-                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Our Movies</a></li>
-                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">About US</a></li>
-                    <li><a href="#" class="text-lg font-medium mr-5 hover:text-blue-400">Services</a></li>
+                    <li><a href="#ours-movie" class="text-lg font-medium mr-5 hover:text-blue-400">Our Movies</a></li>
+                    <li><a href="#flim-abouts" class="text-lg font-medium mr-5 hover:text-blue-400">About US</a></li>
+                    <li><a href="#offer-service" class="text-lg font-medium mr-5 hover:text-blue-400">Services</a></li>
                 </ul>
             </div>
         </nav>
@@ -51,12 +51,12 @@
      <!-- header-area end  -->
     <main>
         <!-- flimExperience-section start  -->
-        <section class="flimExperience-section my-16 px-20">
+        <section class="flimExperience-section my-16 px-20" id="flim-abouts">
             <div class="container mx-auto">
-                <div class="flim-maker grid grid-cols-2 gap-x-9">
+                <div class="flim-maker grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-9">
                     <div class="relative">
-                        <img class="rounded-lg" src="images/camera-man.jpg" alt="">
-                        <h2 class="absolute text-3xl font-semibold bg-white -bottom-10 right-36 px-8 py-4 rounded-md shadow-lg">23 YEARS of EXPERIENCE</h2>
+                        <img class="rounded-lg md:h-96 h-0" src="images/camera-man.jpg" alt="">
+                        <h2 class="absolute sm:text-lg lg:text-3xl lg:font-semibold bg-white md:bottom-16 md:right-10 lg:-bottom-10  lg:right-36 px-8 py-4 rounded-md shadow-lg">23 YEARS of EXPERIENCE</h2>
                     </div>
                     <div class="filmaker-info">
                         <h4 class="text-base font-semibold text-black pb-4">ABOUT US</h4>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <!-- .flimmaking-mission start -->
-                <div class="flimmaking-missions grid grid-cols-3 gap-x-14 mt-24">
+                <div class="flimmaking-missions grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-9 lg:gap-y-0 gap-x-14 mt-24">
                     <div class="our-vission border-t-4 border-black">
                         <h1 class="text-5xl font-sans font-bold text-black mb-2">OUR VISIOn</h1>
                         <p class="text-base font-normal text-slate-400">Director’s vision is the way the director sees the film in his mind and translate it to his film crew. What’s important to know about it is that anyone had a vision, the challenge is to explain it to your crew.</p>
@@ -85,10 +85,10 @@
         </section>
         <!-- flimExperience-section end  -->
         <!-- movieCollection-section start  -->
-        <section class="movieCollection-section bg-slate-700 text-white py-12 my-16 px-20">
+        <section class="movieCollection-section bg-slate-700 text-white py-12 my-16 px-20" id="ours-movie">
             <div class="container mx-auto">
-                <div class="flex justify-between items-center mb-9">
-                    <div class="movieCollection-title">
+                <div class="sm:flex-col md:flex-col lg:flex lg:justify-between md:justify-center items-center mb-9">
+                    <div class="movieCollection-title mb-4">
                     <h4 class="text-base font-serif font-normal">OUR MOVIES</h4>
                    <h1 class="text-5xl font-sans font-bold">Movie collection</h1>
                     </div>
@@ -97,7 +97,7 @@
                    </div>
                 </div>
                 <!-- movie-items start  -->
-                <div class="movie-items grid grid-cols-4 gap-x-14">
+                <div class="movie-items grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 lg:gap-y-0 gap-x-14">
                     <!-- movie-1  -->
                     <div class="border border-white p-7">
                         <img src="images/tenet.jpg" alt="">
@@ -120,13 +120,13 @@
         </section>
         <!-- movieCollection-section end  -->
         <!-- offer-section start  -->
-        <section class="offer-section py-16 sm:px-0 md:px-0 lg:px-20">
+        <section class="offer-section py-16 px-20" id="offer-service">
             <div class="container mx-auto">
                 <div class="offer-title text-center">
                     <h5 class="text-base font-bold uppercase">services</h5>
                     <h1 class="text-5xl font-sans font-bold uppercase mb-9">what we offer</h1>
                 </div>
-                <div class="offer-items grid grid-rows-2 grid-cols-4 text-center gap-11">
+                <div class="offer-items grid sm:grid-cols-1 md:grid-cols-2 grid-rows-2 lg:grid-cols-4 text-center gap-11">
                     <!-- offer-1  -->
                     <article class="border-4 border-slate-400 p-6">
                         <div class="flex justify-center mb-4">
@@ -197,7 +197,7 @@
         <!-- offer-section end  -->
     </main>
     <!-- footer-start  -->
-    <footer class="bg-black text-white py-7 sm:px-0 md:px-0 lg:px-20">
+    <footer class="bg-black text-white py-7 px-20">
         <div class="container mx- auto text-center">
             <h1 class="text-4xl font-bold font-sans uppercase mb-4">Flim Poduction</h1>
             <h3 class="text-lg font-medium font-sans uppercase">next level experience</h3>
